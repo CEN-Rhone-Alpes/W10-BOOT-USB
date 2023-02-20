@@ -77,3 +77,5 @@ vssadmin Resize ShadowStorage /For=C: /On=C: /Maxsize=10%
 vssadmin list shadowstorage#
 if( $? -eq $false){$?}
 
+# Registre Meteo #
+reg import C:\Windows\Panther\InstalCustome\Feeds.reg
