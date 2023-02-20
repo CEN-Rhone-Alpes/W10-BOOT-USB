@@ -50,10 +50,12 @@ Dans les fichiers .ps1(PowerShell) l'on peut réaliser énormément d'action tel
 - Création et suppression de dossier
 - Création de raccourci
 - Installation de logiciel
-- Installation de Wifi
+- Installation de Wifi via .xml
+- Géneration d'un .xml du Wifi connecté
 - Modification de la base de registre
 - Désinstallation de logiciel
 - Modification des paramètres de la bar des taches et du menu de démarrage
+- Géneration d'un .xml de la bar des taches
 - Modification du paramétrage de restauration
 - Modification de la gestion de la batterie, mise en veille et alimentation a la fermeture du capot
 - installation de module PowerShell
