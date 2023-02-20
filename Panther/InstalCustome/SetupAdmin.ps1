@@ -30,6 +30,20 @@ Remove-Printer -Name "OneNote"
 Remove-Printer -Name "Microsoft XPS Document Writer"
 if( $? -eq $false){$?}
 
+# Impriment Crée 4269#
+if($code -like '4269'){
+Start-Sleep -Seconds 2
+set-ItemProperty -path "HKCU:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows" -name "LegacyDefaultPrinterMode" -Value 1
+pnputil.exe -i -a '\\xxx.xxx.xxx.xx\Nuage\SI_Systeme d information\[INSTALL_2020]\_POUR_INSTALL_POST_WAPT\IMPRIMANTES\VOURLES\MPC3004ex_ETAGE\64bits_MpC3004ex_PCL 6 Driver_z79276L16\disk1\oemsetup.inf'
+Add-PrinterDriver -Name "RICOH MP C3004 PCL 6"
+Add-PrinterPort -Name "xxx.xxx.xxx.xx" -PrinterHostAddress "xxx.xxx.xxx.xx"
+Add-Printer -DriverName "RICOH MP C3004 PCL 6" -PortName "xxx.xxx.xxx.xx" -Name "RICOH MP C3004 PCL 6 (Vourles Etage)"
+$MYPRINTER = "RICOH MP C3001 PCL 6 (Vourles Etage)" 
+$PRINTERTMP = (Get-CimInstance -ClassName CIM_Printer | WHERE {$_.Name -eq $MYPRINTER}[0])
+$PRINTERTMP | Invoke-CimMethod -MethodName SetDefaultPrinter | Out-Null
+if( $? -eq $false){$?}}
+
+
 # Play Fox #
 Start-Process -FilePath "C:\Windows\Panther\InstalCustome\Firefox Installer.exe" "/verysilent"
 Do{
