@@ -29,7 +29,7 @@ On peut retrouver toutes les informations qui sont intégrables à l'intérieur 
 
 [__Microsoft lear unattend__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/components-b-unattend)
 
-Ce XML contient un composant nommé "Microsoft-Windows-Shell-Setup ", c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants :
+Ce XML contient un composant nommé ``Microsoft-Windows-Shell-Setup``, c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants :
   - Out-Of-Box Experience : ``<OOBE>``
   - La création de profil : ``<UserAccount>``
     - Création de profil utilisateur : ``<LocalAccount>``
@@ -38,9 +38,9 @@ Ce XML contient un composant nommé "Microsoft-Windows-Shell-Setup ", c'est à l
   - Les commande a réalisé l'or de la premier connection : ``<FirsLogonCommands>``
   - L'intégration de la clé d'activation windows : ``<ProductKey><Key>`` or ``<ProductKey>``
 
-On retrouve également le composant "Microsoft-Windows-International-Core" ce qui permet de définir une langue.
+On retrouve également le composant ``Microsoft-Windows-International-Core`` ce qui permet de définir une langue.
 
-Avec ce XML, on peut préparer un ordinateur jusqu'à l'ouverture de session pour ce qui est du reste (logiciel, Imprimante, Wifi, etc...) c'est là que la commande ``<FirsLogonCommands intérvien>`` est utilisé pour éxécuté un scrip BATCH(``.bat``).
+Avec ce XML, on peut préparer un ordinateur jusqu'à l'ouverture de session pour ce qui est du reste (logiciel, Imprimante, Wifi, etc...) c'est là que la commande ``<FirsLogonCommands>`` intérvien est utilisé pour éxécuté un scrip BATCH(``.bat``).
 
 ### 3) Les script .bat & .ps1
 Sur le périphérique le dossier ou est stocké le ``unattende.xml`` qui est "``USB:\sources\$OEM$\$$\Panther``" est le futur dossier que l'on retrouvera sur le nouveau post au chemin suivent "``C:\Windows\Panther``" ce qui nous permet de crée et de placé à l'intérieur de celui-ci tout ce qui nous est néssésair de trouvé localement pour la préparation de la session.
