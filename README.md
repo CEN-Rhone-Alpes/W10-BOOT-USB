@@ -22,7 +22,7 @@ Logiciel sous licence GPLv3 permettant de crée une clé USB de boot dans des ve
 
 Au moment de l'utilisation de Rufus, il va débuter par le formatage du périphérique et par l'installation de tous les fichiers nécessaire à la réalisation d'une construction de l'image Windows.
 
-Il va placer à l'intérieur du périphérique un fichier nommé "unattend.xml ", c'est ce fichier qui sera lu au moment de l'installation et qui va donner de nombreuses directives.
+Il va placer à l'intérieur du périphérique un fichier nommé ``unattend.xml``, c'est ce fichier qui sera lu au moment de l'installation et qui va donner de nombreuses directives.
  
 ### 2) Unattend.xml
 On peut retrouver toutes les informations qui sont intégrables à l'intérieur de celui-ci sur le lien suivent :
@@ -45,9 +45,9 @@ Avec ce XML, on peut préparer un ordinateur jusqu'à l'ouverture de session pou
 ### 3) Les script .bat & .ps1
 Sur le périphérique le dossier ou est stocké le ``unattende.xml`` qui est "``USB:\sources\$OEM$\$$\Panther``" est le futur dossier que l'on retrouvera sur le nouveau post au chemin suivent "``C:\Windows\Panther``" ce qui nous permet de crée et de placé à l'intérieur de celui-ci tout ce qui nous est néssésair de trouvé localement pour la préparation de la session.
 
-Le fichier .bat dans "Panther" va permettre l'exécution d'autre fichier en t'en qu'administrateur au moment de la première ouverture de session.
+Le fichier ``.bat`` dans ``"Panther"`` va permettre l'exécution d'autre fichier en t'en qu'administrateur au moment de la première ouverture de session.
 
-Dans les fichiers .ps1(PowerShell) l'on peut réaliser énormément d'action telle que:
+Dans les fichiers ``.ps1``(PowerShell) l'on peut réaliser énormément d'action telle que:
 
 - Copié, coupé, coller
 - Création et suppression de dossier
