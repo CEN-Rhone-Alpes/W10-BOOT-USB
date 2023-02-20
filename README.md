@@ -99,6 +99,8 @@ Une fois tout préparé, l'on peut lancer le boot d'un PC presque sans intervent
 ### 4) Générateur unattend.xml
 Pour simplifier les différentes manipulations du unattend.xml l'on peut créer sous différents formats un GUI, mon générateur de .xml est au format PowerShell.
 
+![image](https://user-images.githubusercontent.com/120559974/220123026-aa2b7ddb-e11b-4172-b84e-c16752ad7bbc.png)
+
 [__Mon Unattend GUI__](https://github.com/tlaveille-CENRA/W10-BOOT-USB/tree/main/Panther/InstalCustome/Unattend)
 
   
