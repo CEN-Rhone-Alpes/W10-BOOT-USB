@@ -8,8 +8,13 @@ Création d'un PC sous Windows avec toutes les fonctionnalités nécessaire à s
 ## La Réalisation : 
 
 ### 1) Utilisation du logiciel Rufus
+[![Licence](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square&label=License)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
 Logiciel sous licence GPLv3 permettant de crée une clé USB de boot dans des versions de Windows allant de 7 à la 11 en tout simplicités.
- 
+
+ ![Rufus logo](https://raw.githubusercontent.com/pbatard/rufus/master/res/icons/rufus-128.png)
+[__Official Website__](https://rufus.ie)
+
 https://github.com/pbatard/rufus
 
 Au moment de l'utilisation de Rufus, il va débuter par le formatage du périphérique et par l'installation de tous les fichiers nécessaire à la réalisation d'une construction de l'image Windows.
