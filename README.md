@@ -5,6 +5,8 @@ Création d'une clé de boot Windows 10
 
 Création d'un PC sous Windows avec toutes les fonctionnalités nécessaire à son utilisation, de manière la plus automatique en réduisant au maximum les manipulations de l'administrateur.
 
+Pour permettre de réduire considérablement le temps accordé à ce type de tache, et le consacré à d'autres utilités.
+
 ## La Réalisation : 
 
 ### 1) Utilisation du logiciel Rufus
@@ -95,6 +97,8 @@ Mais pour que cela fonctionne, il faut avoir préparé différents éléments qu
 - Installateur QGIS 3.xx
 
 Une fois tout préparé, l'on peut lancer le boot d'un PC presque sans intervention.
+
+<i> Combiné à l'utilisation de WAPT pour l'installation de la plupart de nos logiciels </i>
 
 ### 4) Générateur unattend.xml
 Pour simplifier les différentes manipulations du unattend.xml l'on peut créer sous différents formats un GUI, mon générateur de .xml est au format PowerShell.
