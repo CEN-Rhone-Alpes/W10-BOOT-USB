@@ -63,23 +63,32 @@ dans les fichier .ps1 l'on peut réalisé énormément d'acteur telle que:
  - Modification du mot de passe
  - Activation ou désactivation de compte utilisateur
  - Renomage PC
+ - Capture d'écrant
+ - Copie dans le presse dans le papier
+ - Envoie de mail
+ - 
 
 Mais pour que cella fonctione il faut avoir préparé différent élement nécessaire au paramétrage interne à sertain fonctionement windows ou logiciel :
 
  - Les .reg nécessaire à la modification de interface :
-  - Interface explorateur
-  - Paramétrage de la bar des tache (actualité, météo, navigateur de fênetre, cortana, etc...)
-  - Paramétrage du font d'ecrant et réssolution
-  - Interface & option pour QGIS 2.xx
+   - Interface explorateur
+   - Paramétrage de la bar des tache (actualité, météo, navigateur de fênetre, cortana, etc...)
+   - Paramétrage du font d'ecrant et réssolution
+   - Interface & option pour QGIS 2.xx
+   - Lien WMS/WFS/Postgisql pour QGIS 2.xx
+   - Activation de Plugin pour QGIS 2.xx
  - Le .msp pour la suite Microsoft Office
  - Le .tvopt pour TeamViewer
  - Le .xml pour les racourrsi de bar des tache et le menu de démarage
  - Les .xml pour chaque point d'accet WiFi
  - Les fichier de paramétrage de GroupePolicy
- - Lien de la page pour déffinisent le navigateur par defaut 
+ - Lien de la page pour déffinisent le navigateur par defaut
+ - Installateur QGIS 3.xx
 
-Une fois tout c'est élément préparé l'on peut lancé le boot d'un pc presque sans intervention.
+Une fois tout c'est élément préparé l'on peut lancé le boot d'un PC presque sans intervention.
 
-### 4)
+### 4) Générateur unattend.xml
+Pour simplifier les différente manipulation du unattend.xml l'on peut crée sous différent format un GUI, mon générateur de .xml est au format PowerShell.
+
 
   
