@@ -13,9 +13,10 @@ Création d'un PC sous Windows avec toutes les fonctionnalités nécessaire à s
 Logiciel sous licence GPLv3 permettant de crée une clé USB de boot dans des versions de Windows allant de 7 à la 11 en tout simplicités.
 
  ![Rufus logo](https://raw.githubusercontent.com/pbatard/rufus/master/res/icons/rufus-128.png)
+ 
 [__Official Website__](https://rufus.ie)
 
-https://github.com/pbatard/rufus
+[__Github__](https://github.com/pbatard/rufus)
 
 Au moment de l'utilisation de Rufus, il va débuter par le formatage du périphérique et par l'installation de tous les fichiers nécessaire à la réalisation d'une construction de l'image Windows.
 
@@ -24,7 +25,7 @@ Il va placer à l'intérieur du périphérique un fichier nommé "unattend.xml "
 ### 2) Unattend.xml
 On peut retrouver toutes les informations qui sont intégrables à l'intérieur de celui-ci sur le lien suivent :
 
-https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/components-b-unattend
+[__Microsoft lear unattend__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/components-b-unattend)
 
 Ce XML contient un composant nommé "Microsoft-Windows-Shell-Setup ", c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants :
   - Out-Of-Box Experience : ``<OOBE>``
