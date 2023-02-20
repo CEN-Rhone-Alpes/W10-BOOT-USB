@@ -103,4 +103,15 @@ Pour simplifier les différentes manipulations du unattend.xml l'on peut créer 
 
 [__Mon Unattend GUI__](https://github.com/tlaveille-CENRA/W10-BOOT-USB/tree/main/Panther/InstalCustome/Unattend)
 
-  
+## L'utilisation :
+
+ 1) Crée le fichier unattend.xml
+ 2) Placez la clé dans le PC à BOOT
+ 3) Ouvrir le menu de boot du BIOS et lancé avec le périphérique
+ 4) Acceptez les conditions d'utilisation de Windows
+ 5) Choix du formatage avancé
+ 6) Supprimez toutes les anciennes partitions
+ 7) Boot sur une partition libre
+ 8) Attendre la fin de l'installation complète du PC
+
+# Fin
