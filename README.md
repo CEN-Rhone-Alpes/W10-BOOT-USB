@@ -72,6 +72,7 @@ Dans les fichiers .ps1(PowerShell) l'on peut réaliser énormément d'action tel
 - Capture d'écran
 - Copié dans le presse dans le papier
 - Envoie par mail
+- Trouve la clé d'activation Windows
 
 Mais pour que cela fonctionne, il faut avoir préparé différents éléments qui sont nécessaires au paramétrage interne de certaines fonctionnalités Windows ou logiciel :
 
