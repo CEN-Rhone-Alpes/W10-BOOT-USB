@@ -66,7 +66,6 @@ dans les fichier .ps1 l'on peut réalisé énormément d'acteur telle que:
  - Capture d'écrant
  - Copie dans le presse dans le papier
  - Envoie de mail
- - 
 
 Mais pour que cella fonctione il faut avoir préparé différent élement nécessaire au paramétrage interne à sertain fonctionement windows ou logiciel :
 
