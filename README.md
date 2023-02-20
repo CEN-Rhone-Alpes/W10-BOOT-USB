@@ -98,7 +98,7 @@ Mais pour que cela fonctionne, il faut avoir préparé différents éléments qu
 
 Une fois tout préparé, l'on peut lancer le boot d'un PC presque sans intervention.
 
-<i> Combiné à l'utilisation de WAPT pour l'installation de la plupart de nos logiciels </i>
+<i> *Combiné à l'utilisation de WAPT pour l'installation de la plupart de nos logiciels* </i>
 
 ### 4) Générateur unattend.xml
 Pour simplifier les différentes manipulations du unattend.xml l'on peut créer sous différents formats un GUI, mon générateur de .xml est au format PowerShell.
