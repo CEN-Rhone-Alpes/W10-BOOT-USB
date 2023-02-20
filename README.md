@@ -33,7 +33,7 @@ Ce XML contient un composant nommé "Microsoft-Windows-Shell-Setup ", c'est à l
     - Création de profil utilisateur : ``<LocalAccount>``
     - Modification de profil administrateur : ``<AdministratoPassword>``
   - Connexion automatique à la première utilisation : ``<AutoLogon>``
-  - Les commande a réalisé l'or de la premier connection : ``<FirsLogonCommands>
+  - Les commande a réalisé l'or de la premier connection : ``<FirsLogonCommands>``
   - L'intégration de la clé d'activation windows : ``<ProductKey><Key>`` or ``<ProductKey>``
 
 On retrouve également le composant "Microsoft-Windows-International-Core" ce qui permet de définir une langue.
