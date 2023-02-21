@@ -27,7 +27,7 @@ Il va placer à l'intérieur du périphérique un fichier nommé ``unattend.xml`
 ### 2) Unattend.xml
 On peut retrouver toutes les informations qui sont intégrables à l'intérieur de celui-ci sur le lien suivent :
 
-[__Microsoft lear unattend__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/components-b-unattend)
+[__Microsoft lear unattend__]([https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/components-b-unattend](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup))
 
 [__Microsoft automatiser installation __](https://learn.microsoft.com/fr-fr/windows-hardware/manufacture/desktop/automate-windows-setup?view=windows-11)
 
