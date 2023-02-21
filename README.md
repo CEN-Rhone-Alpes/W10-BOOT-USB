@@ -136,7 +136,7 @@ Pour simplifier les différentes manipulations du unattend.xml l'on peut créer 
  7) Boot sur une partition libre
  8) Attendre la fin de l'installation complète du PC
 
-### 5) Les axe d'observation
+## Les axe future
 
 Testé l'utilisation de ``imgmgr.exe``("Windows System Image Manager"), un outil du "Assessment and Deployment Kit" peut potentiellement permettre de faciliter 
 la création d'un XML et de testé la validité de celui-ci.
