@@ -143,4 +143,8 @@ la création d'un XML et de testé la validité de celui-ci.
 
 [__Windows System Image Manager__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference)
 
+Exploré les changements de Windows 10 à Windows 11, du unattend et des script PowerShell.
+
+*Attention fin en 2025 des mise a jour de sécurité pour Windows 10*
+
 # Fin
