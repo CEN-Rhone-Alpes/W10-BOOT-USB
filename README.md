@@ -31,7 +31,11 @@ On peut retrouver toutes les informations qui sont intégrables à l'intérieur 
 
 [__Microsoft automatiser installation__](https://learn.microsoft.com/fr-fr/windows-hardware/manufacture/desktop/automate-windows-setup?view=windows-11)
 
-Ce XML contient un composant nommé ``Microsoft-Windows-Shell-Setup``, c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants qui sont lié au paramétrage de Windows :
+Ce XML fonctione par un principe de ``Composants`` chaqun va permetre de définire différent stratégie de paramétrage sur des thématique qui leur sont propre.
+
+[__Liste des Composants__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/components-b-unattend)
+
+La Composants ``Microsoft-Windows-Shell-Setup``, c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants qui sont lié au paramétrage de Windows et du profil :
 - Out-Of-Box Experience : ``<OOBE>``
 - La création de profil : ``<UserAccount>``
   - Création de profil utilisateur : ``<LocalAccount>``
@@ -131,5 +135,11 @@ Pour simplifier les différentes manipulations du unattend.xml l'on peut créer 
  6) Supprimez toutes les anciennes partitions
  7) Boot sur une partition libre
  8) Attendre la fin de l'installation complète du PC
+
+### 5) Les axe d'observation
+
+Testé l'utilisation de ``imgmgr.exe``("Windows System Image Manager"), un outil du "Assessment and Deployment Kit" peut potentiellement permettre de faciliter 
+la création d'un XML et de testé la validité de celui-ci.
+
 
 # Fin
