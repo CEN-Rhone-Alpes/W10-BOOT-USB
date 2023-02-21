@@ -141,5 +141,6 @@ Pour simplifier les différentes manipulations du unattend.xml l'on peut créer 
 Testé l'utilisation de ``imgmgr.exe``("Windows System Image Manager"), un outil du "Assessment and Deployment Kit" peut potentiellement permettre de faciliter 
 la création d'un XML et de testé la validité de celui-ci.
 
+[__Windows System Image Manager__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference)
 
 # Fin
