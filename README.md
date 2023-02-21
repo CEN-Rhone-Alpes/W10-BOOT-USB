@@ -29,6 +29,8 @@ On peut retrouver toutes les informations qui sont intégrables à l'intérieur 
 
 [__Microsoft lear unattend__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/components-b-unattend)
 
+[__Microsoft automatiser installation __](https://learn.microsoft.com/fr-fr/windows-hardware/manufacture/desktop/automate-windows-setup?view=windows-11)
+
 Ce XML contient un composant nommé ``Microsoft-Windows-Shell-Setup``, c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants :
 - Out-Of-Box Experience : ``<OOBE>``
 - La création de profil : ``<UserAccount>``
@@ -42,6 +44,9 @@ On retrouve également des paramétrages non-indispensable, mais pratique pour m
 
 - La page de support : ``<OEMInformation>``
 - Gestion des partitions : ``<DickConfiguration>``
+- Modification du paramétrage d'affichage : ``<Display>``
+- Spécifie les informations d'installation : ``<Diagnostics>``
+- 
 
 On retrouve également le composant ``Microsoft-Windows-International-Core`` ce qui permet de définir une langue.
 
