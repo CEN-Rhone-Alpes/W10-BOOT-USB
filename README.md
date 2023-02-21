@@ -27,9 +27,9 @@ Il va placer à l'intérieur du périphérique un fichier nommé ``unattend.xml`
 ### 2) Unattend.xml
 On peut retrouver toutes les informations qui sont intégrables à l'intérieur de celui-ci sur le lien suivent :
 
-[__Microsoft lear unattend__]([https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/components-b-unattend](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup))
+[__Microsoft lear unattend__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup)
 
-[__Microsoft automatiser installation __](https://learn.microsoft.com/fr-fr/windows-hardware/manufacture/desktop/automate-windows-setup?view=windows-11)
+[__Microsoft automatiser installation__](https://learn.microsoft.com/fr-fr/windows-hardware/manufacture/desktop/automate-windows-setup?view=windows-11)
 
 Ce XML contient un composant nommé ``Microsoft-Windows-Shell-Setup``, c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants :
 - Out-Of-Box Experience : ``<OOBE>``
