@@ -31,7 +31,7 @@ On peut retrouver toutes les informations qui sont intégrables à l'intérieur 
 
 [__Microsoft automatiser installation__](https://learn.microsoft.com/fr-fr/windows-hardware/manufacture/desktop/automate-windows-setup?view=windows-11)
 
-Ce XML contient un composant nommé ``Microsoft-Windows-Shell-Setup``, c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants :
+Ce XML contient un composant nommé ``Microsoft-Windows-Shell-Setup``, c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants qui sont lié au paramétrage de Windows :
 - Out-Of-Box Experience : ``<OOBE>``
 - La création de profil : ``<UserAccount>``
   - Création de profil utilisateur : ``<LocalAccount>``
@@ -41,14 +41,18 @@ Ce XML contient un composant nommé ``Microsoft-Windows-Shell-Setup``, c'est à 
 - L'intégration de la clé d'activation windows : ``<ProductKey><Key>`` or ``<ProductKey>``
   
 On retrouve également des paramétrages non-indispensable, mais pratique pour modifier des paramétrage telle que :
-
 - La page de support : ``<OEMInformation>``
-- Gestion des partitions : ``<DickConfiguration>``
 - Modification du paramétrage d'affichage : ``<Display>``
 - Spécifie les informations d'installation : ``<Diagnostics>``
 - Application dans la bar de raccourci : ``<TaskbarLinks>``
+- Application sur le écran d'accueil : ``<StartTiles>``
+- Themes 
 
-On retrouve également le composant ``Microsoft-Windows-International-Core`` ce qui permet de définir une langue.
+L'on retrouve deux autre composant qui sont utile pour la préparation de poste il sont plus lié au fonctionement même de l'ordinateur :
+- ``Microsoft-Windows-Setup`` : Sélectionner l’image Windows et configurer le système d’exploitation Windows PE
+  - Gestion des partitions : ``<DickConfiguration>``
+  - Spécifie les données utilisateur : ``<UserData>``
+- ``Microsoft-Windows-International-Core`` : Parametrage des langue utilisé par le systeme
 
 Avec ce XML, on peut préparer un ordinateur jusqu'à l'ouverture de session pour ce qui est du reste (logiciel, Imprimante, Wifi, etc...) c'est là que la commande ``<FirsLogonCommands>`` intérvien est utilisé pour éxécuté un scrip BATCH(``.bat``).
 
