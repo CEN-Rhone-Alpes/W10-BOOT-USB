@@ -22,6 +22,9 @@ Logiciel sous licence GPLv3 permettant de crée une clé USB de boot dans des ve
 
 Au moment de l'utilisation de Rufus, il va débuter par le formatage du périphérique et par l'installation de tous les fichiers nécessaire à la réalisation d'une construction de l'image Windows.
 
+![image](https://user-images.githubusercontent.com/120559974/220396662-3d3ffcd4-94fc-42ee-8645-c3169e48f062.png)
+![image](https://user-images.githubusercontent.com/120559974/220397172-d73bb805-efb2-4903-aceb-274d6c6fb196.png)
+
 Il va placer à l'intérieur du périphérique un fichier nommé ``unattend.xml``, c'est ce fichier qui sera lu au moment de l'installation et qui va donner de nombreuses directives.
  
 ### 2) Unattend.xml
