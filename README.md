@@ -46,7 +46,7 @@ On retrouve également des paramétrages non-indispensable, mais pratique pour m
 - Gestion des partitions : ``<DickConfiguration>``
 - Modification du paramétrage d'affichage : ``<Display>``
 - Spécifie les informations d'installation : ``<Diagnostics>``
-- 
+- Application dans la bar de raccourci : ``<TaskbarLinks>``
 
 On retrouve également le composant ``Microsoft-Windows-International-Core`` ce qui permet de définir une langue.
 
