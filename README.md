@@ -46,9 +46,9 @@ On retrouve également des paramétrages non-indispensable, mais pratique pour m
 - Spécifie les informations d'installation : ``<Diagnostics>``
 - Application dans la bar de raccourci : ``<TaskbarLinks>``
 - Application sur le écran d'accueil : ``<StartTiles>``
-- Themes 
+- Eléments du style visuel : ``<Themes>``
 
-L'on retrouve deux autre composant qui sont utile pour la préparation de poste il sont plus lié au fonctionement même de l'ordinateur :
+L'on retrouve deux autre composant qui sont utile pour la préparation de postes, ils sont plus lié au fonctionnement même de l'ordinateur et à l'image d'installation :
 - ``Microsoft-Windows-Setup`` : Sélectionner l’image Windows et configurer le système d’exploitation Windows PE
   - Gestion des partitions : ``<DickConfiguration>``
   - Spécifie les données utilisateur : ``<UserData>``
