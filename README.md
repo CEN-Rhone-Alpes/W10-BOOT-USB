@@ -30,13 +30,18 @@ On peut retrouver toutes les informations qui sont intégrables à l'intérieur 
 [__Microsoft lear unattend__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/components-b-unattend)
 
 Ce XML contient un composant nommé ``Microsoft-Windows-Shell-Setup``, c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants :
-  - Out-Of-Box Experience : ``<OOBE>``
-  - La création de profil : ``<UserAccount>``
-    - Création de profil utilisateur : ``<LocalAccount>``
-    - Modification de profil administrateur : ``<AdministratoPassword>``
-  - Connexion automatique à la première utilisation : ``<AutoLogon>``
-  - Les commande a réalisé l'or de la premier connection : ``<FirsLogonCommands>``
-  - L'intégration de la clé d'activation windows : ``<ProductKey><Key>`` or ``<ProductKey>``
+- Out-Of-Box Experience : ``<OOBE>``
+- La création de profil : ``<UserAccount>``
+  - Création de profil utilisateur : ``<LocalAccount>``
+  - Modification de profil administrateur : ``<AdministratoPassword>``
+- Connexion automatique à la première utilisation : ``<AutoLogon>``
+- Les commande a réalisé l'or de la premier connection : ``<FirsLogonCommands>``
+- L'intégration de la clé d'activation windows : ``<ProductKey><Key>`` or ``<ProductKey>``
+  
+On retrouve également des paramétrages non-indispensable, mais pratique pour modifier des paramétrage telle que :
+
+- La page de support : ``<OEMInformation>``
+- Gestion des partitions : ``<DickConfiguration>``
 
 On retrouve également le composant ``Microsoft-Windows-International-Core`` ce qui permet de définir une langue.
 
