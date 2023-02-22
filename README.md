@@ -1,5 +1,5 @@
 # W10-BOOT-USB
-Création d'une clé de BOOT Windows 10
+Création d'une clé de BOOT (Bootstrap) Windows 10
 
 ## Les Objectif :
 
