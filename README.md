@@ -132,16 +132,29 @@ WAPT est un logiciel qui permet de réaliser la création de paquets affins, d'e
 
 ![fonctionnement_wapt](https://user-images.githubusercontent.com/120559974/220595018-62692b72-8433-4e61-b837-4a330638974e.png)
 
+
 WAPT Self Service est une interface graphique qui permet de simplement et de marnière intuitive effectuée :
  - installation, mise à jour et désinstallation
  - Création de paquet
  - Recherche et filtrage des postes
 
-<img src=https://user-images.githubusercontent.com/120559974/220603890-3f6809f5-b873-435d-b369-52b65247cbde.png width="40%" height="40%">
+<i> Interface de gestion des postes </i>
+
+<img src=https://user-images.githubusercontent.com/120559974/220622165-4867864c-9d3b-4ca8-aecf-9586e93761b5.png width="40%" height="40%">
 
 La mise à disposition d'un store de logiciels dans WAPT Self Service permet de facilité la création de paquet avec une bibliothèque de logiciel qui est mise à disposition.
 
-<img src=https://user-images.githubusercontent.com/120559974/220603306-c29d9fa8-497f-4e1a-8625-651aee0c12e8.png width="40%" height="40%">
+<i>Bibliothèque de logiciel</i>
+
+<img src=https://user-images.githubusercontent.com/120559974/220603306-c29d9fa8-497f-4e1a-8625-651aee0c12e8.png alt="Bibliothèque de logiciel" width="40%" height="40%">
+ 
+<i> Interface des paquets </i>
+
+<img src=https://user-images.githubusercontent.com/120559974/220622169-6e3f4f23-cdad-44cb-85cf-a482e0b3d3cf.png width="40%" height="40%">
+
+<i> Interface des paquets du poste </i> 
+
+<img src=https://user-images.githubusercontent.com/120559974/220622173-537f152d-96f3-43d4-af3e-e1f6b89e2d18.png width="40%" height="40%">
 
 ### 4) Générateur unattend.xml
 Pour simplifier les différentes manipulations de unattend.xml l'on peut créer sous différents formats un GUI, mon générateur de .xml est au format PowerShell.
