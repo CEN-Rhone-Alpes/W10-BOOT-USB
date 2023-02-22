@@ -136,8 +136,12 @@ WAPT Self Service est une interface graphique qui permet de simplement et de mar
  - installation, mise à jour et désinstallation
  - Création de paquet
  - Recherche et filtrage des postes
- 
+
+<img src=https://user-images.githubusercontent.com/120559974/220603890-3f6809f5-b873-435d-b369-52b65247cbde.png width="40%" height="40%">
+
 La mise à disposition d'un store de logiciels dans WAPT Self Service permet de facilité la création de paquet avec une bibliothèque de logiciel qui est mise à disposition.
+
+<img src=https://user-images.githubusercontent.com/120559974/220603306-c29d9fa8-497f-4e1a-8625-651aee0c12e8.png width="40%" height="40%">
 
 ### 4) Générateur unattend.xml
 Pour simplifier les différentes manipulations de unattend.xml l'on peut créer sous différents formats un GUI, mon générateur de .xml est au format PowerShell.
