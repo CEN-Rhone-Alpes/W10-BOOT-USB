@@ -126,9 +126,18 @@ Une fois tout préparé, l'on peut lancer le BOOT d'un PC presque sans intervent
 
 <img src=https://user-images.githubusercontent.com/120559974/220587385-b290301e-8da7-4616-bf8a-185ef3fe3dc7.png width="40%" height="40%">
 
+[__Official Website__](https://www.tranquil.it/gerer-parc-informatique/decouvrir-wapt/)
+
+WAPT est un logiciel qui permet de réaliser la création de paquets affins, d'effectuer des installation et mise à jour de logiciel de marnière simple, silencieuse et automatique sur l'intégralité d'un parc informatique sans besoin d'intervention physique, pour se faire le logiciel fonctionne de la marnière suivante :
+
 ![fonctionnement_wapt](https://user-images.githubusercontent.com/120559974/220595018-62692b72-8433-4e61-b837-4a330638974e.png)
 
-
+WAPT Self Service est une interface graphique qui permet de simplement et de marnière intuitive effectuée :
+ - installation, mise à jour et désinstallation
+ - Création de paquet
+ - Recherche et filtrage des postes
+ 
+La mise à disposition d'un store de logiciels dans WAPT Self Service permet de facilité la création de paquet avec une bibliothèque de logiciel qui est mise à disposition.
 
 ### 4) Générateur unattend.xml
 Pour simplifier les différentes manipulations de unattend.xml l'on peut créer sous différents formats un GUI, mon générateur de .xml est au format PowerShell.
