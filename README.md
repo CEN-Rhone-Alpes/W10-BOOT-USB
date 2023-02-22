@@ -1,9 +1,9 @@
 # W10-BOOT-USB
-Création d'une clé de boot Windows 10
+Création d'une clé de BOOT Windows 10
 
 ## Les Objectif :
 
-Création d'un PC sous Windows avec toutes les fonctionnalités nécessaire à son utilisation, de manière la plus automatique en réduisant au maximum les manipulations de l'administrateur.
+Création d'un PC sous Windows avec toutes les fonctionnalités nécessaires à son utilisation, de manière la plus automatique, en réduisant au maximum les manipulations de l'administrateur.
 
 Pour permettre de réduire considérablement le temps accordé à ce type de tache, et le consacré à d'autres utilités.
 
@@ -12,7 +12,7 @@ Pour permettre de réduire considérablement le temps accordé à ce type de tac
 ### 1) Utilisation du logiciel Rufus
 [![Licence](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square&label=License)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-Logiciel sous licence GPLv3 permettant de crée une clé USB de boot dans des versions de Windows allant de 7 à la 11 en tout simplicités.
+Logiciel sous licence GPL v3 permettant de créer une clé USB de BOOT dans des versions de Windows allant de 7 à la 11 en toute simplicité.
 
  ![Rufus logo](https://raw.githubusercontent.com/pbatard/rufus/master/res/icons/rufus-128.png)
  
@@ -34,59 +34,59 @@ On peut retrouver toutes les informations qui sont intégrables à l'intérieur 
 
 [__Microsoft automatiser installation__](https://learn.microsoft.com/fr-fr/windows-hardware/manufacture/desktop/automate-windows-setup?view=windows-11)
 
-Ce XML fonctione par un principe de ``Composants`` chaqun va permetre de définire différent stratégie de paramétrage sur des thématique qui leur sont propre.
+Ce XML fonctionne par un principe de Composants chacun va permettre de définir différentes stratégies de paramétrage sur des thématiques qui leur sont propres.
 
 [__Liste des Composants__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/unattend/components-b-unattend)
 
-La Composants ``Microsoft-Windows-Shell-Setup``, c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants qui sont lié au paramétrage de Windows et du profil :
+La Composants ``Microsoft-Windows-Shell-Setup``, c'est à l'intérieur de celui-ci que l'on va retrouver les éléments les plus importants qui sont liés au paramétrage de Windows et du profil :
 - Out-Of-Box Experience : ``<OOBE>``
 - La création de profil : ``<UserAccount>``
   - Création de profil utilisateur : ``<LocalAccount>``
   - Modification de profil administrateur : ``<AdministratoPassword>``
 - Connexion automatique à la première utilisation : ``<AutoLogon>``
-- Les commande a réalisé l'or de la premier connection : ``<FirsLogonCommands>``
-- L'intégration de la clé d'activation windows : ``<ProductKey><Key>`` or ``<ProductKey>``
+- Les commande a réalisé l'or de la première connexion : ``<FirsLogonCommands>``
+- L'intégration de la clé d'activation Windows : ``<ProductKey><Key>`` ou ``<ProductKey>``
   
-On retrouve également des paramétrages non-indispensable, mais pratique pour modifier des paramétrage telle que :
+On retrouve également des paramétrages non-indispensable, mais pratique pour modifier des paramétrages telle que :
 - La page de support : ``<OEMInformation>``
 - Modification du paramétrage d'affichage : ``<Display>``
 - Spécifie les informations d'installation : ``<Diagnostics>``
 - Application dans la bar de raccourci : ``<TaskbarLinks>``
-- Application sur le écran d'accueil : ``<StartTiles>``
-- Eléments du style visuel : ``<Themes>``
+- Application sur l'écran d'accueil : ``<StartTiles>``
+- Éléments du style visuel : ``<Themes>``
 
-L'on retrouve deux autre composant qui sont utile pour la préparation de postes, ils sont plus lié au fonctionnement même de l'ordinateur et à l'image d'installation :
+L'on retrouve deux autre composant qui est utiles pour la préparation de postes, ils sont plus liés au fonctionnement même de l'ordinateur et à l'image d'installation :
 - ``Microsoft-Windows-Setup`` : Sélectionner l’image Windows et configurer le système d’exploitation Windows PE
   - Gestion des partitions : ``<DickConfiguration>``
   - Spécifie les données utilisateur : ``<UserData>``
-- ``Microsoft-Windows-International-Core`` : Parametrage des langue utilisé par le systeme
+- ``Microsoft-Windows-International-Core`` : Paramétrage des langues utilisé par le système
 
-Avec ce XML, on peut préparer un ordinateur jusqu'à l'ouverture de session pour ce qui est du reste (logiciel, Imprimante, Wifi, etc...) c'est là que la commande ``<FirsLogonCommands>`` intérvien est utilisé pour éxécuté un scrip BATCH(``.bat``).
+Avec ce XML, on peut préparer un ordinateur jusqu'à l'ouverture de session, pour ce qui est du reste (logiciel, Imprimante, Wifi, etc...) c'est là que la commande ``<FirsLogonCommands>`` intervient, elle est utilisée pour exécuté un script BATCH(``.bat``).
 
 ### 3) Les script .bat & .ps1
-Sur le périphérique le dossier ou est stocké le ``unattende.xml`` qui est "``USB:\sources\$OEM$\$$\Panther``" est le futur dossier que l'on retrouvera sur le nouveau post au chemin suivent "``C:\Windows\Panther``" ce qui nous permet de crée et de placé à l'intérieur de celui-ci tout ce qui nous est néssésair de trouvé localement pour la préparation de la session.
+Sur le périphérique, le dossier où est stocké le ``unattende.xml`` qui est "``USB:\sources\$OEM$\$$\Panther``" est le futur dossier que l'on retrouvera sur le nouveau post au chemin suivent "``C:\Windows\Panther``" ce qui nous permet de créer et de placé à l'intérieur de celui-ci tout ce qui nous est nécessaire de trouver localement pour la préparation de la session.
 
 Le fichier ``.bat`` dans ``"Panther"`` va permettre l'exécution d'autre fichier en t'en qu'administrateur au moment de la première ouverture de session.
 
-Dans les fichiers ``.ps1``(PowerShell) l'on peut réaliser énormément d'action telle que:
+Dans les fichiers ``.ps1``(PowerShell) l'on peut réaliser énormément d'action telle que :
 
 - Copié, coupé, coller
 - Création et suppression de dossier
 - Création de raccourci
 - Installation de logiciel
 - Installation de Wifi via .xml
-- Géneration d'un .xml du Wifi connecté
+- Génération d'un .xml du Wifi connecté
 - Modification de la base de registre
 - Désinstallation de logiciel
 - Modification des paramètres de la bar des taches et du menu de démarrage
-- Géneration d'un .xml de la bar des taches
+- Génération d'un .xml de la bar des taches
 - Modification du paramétrage de restauration
 - Modification de la gestion de la batterie, mise en veille et alimentation a la fermeture du capot
 - installation de module PowerShell
 - Installation et suppression d'imprimante
 - Ouverture de Page Web
 - Utilisation de msiexc
-- Rendre permanant les raccourcis serveur
+- Rendre permanent les raccourcis serveur
 - Création de boucle
 - Détection de logiciel en cours d'exécution
 - Lecteur de fichier .xml
@@ -102,27 +102,27 @@ Dans les fichiers ``.ps1``(PowerShell) l'on peut réaliser énormément d'action
 
 Mais pour que cela fonctionne, il faut avoir préparé différents éléments qui sont nécessaires au paramétrage interne de certaines fonctionnalités Windows ou logiciel :
 
-- Les .reg nécessaire à la modification d'interface ou de parmamétrage:
-  - Paramétrage de lnterface explorateur
-  - Paramétrage de la bar des taches (actualité, météo, navigateur de fenêtre, cortana, etc...)
+- Les .reg nécessaire à la modification d'interface ou de paramétrage :
+  - Paramétrage d'interface explorateur
+  - Paramétrage de la bar des taches (actualité, météo, navigateur de fenêtre, Cortana, etc...)
   - Paramétrage du fond d'écran et résolution
-  - Interface & option pour QGIS 2.xx
-  - Lien WMS/WFS/PostgiSQL pour QGIS 2.xx
+  - Interface et option pour QGIS 2.xx
+  - Lien WMS/WFS/PostGIS pour QGIS 2.xx
   - Activation de plugin pour QGIS 2.xx
 - Le .msp pour la suite Microsoft Office
 - Le .tvopt pour TeamViewer
-- Le .xml pour les raccourcies de bar des tache et le menu de démarrage
+- Le .xml pour les raccourcis de bar des taches et le menu de démarrage
 - Les .xml pour chaque point d'accès Wifi
 - Les fichiers de paramétrage de GroupePolicy
 - Lien de la page pour définir le navigateur par défaut
 - Installateur QGIS 3.xx
 
-Une fois tout préparé, l'on peut lancer le boot d'un PC presque sans intervention.
+Une fois tout préparé, l'on peut lancer le BOOT d'un PC presque sans intervention.
 
 <i> *Combiné à l'utilisation de WAPT pour l'installation de la plupart de nos logiciels* </i>
 
 ### 4) Générateur unattend.xml
-Pour simplifier les différentes manipulations du unattend.xml l'on peut créer sous différents formats un GUI, mon générateur de .xml est au format PowerShell.
+Pour simplifier les différentes manipulations de unattend.xml l'on peut créer sous différents formats un GUI, mon générateur de .xml est au format PowerShell.
 
 ![image](https://user-images.githubusercontent.com/120559974/220123026-aa2b7ddb-e11b-4172-b84e-c16752ad7bbc.png)
 
@@ -132,22 +132,22 @@ Pour simplifier les différentes manipulations du unattend.xml l'on peut créer 
 
  1) Crée le fichier unattend.xml
  2) Placez la clé dans le PC à BOOT
- 3) Ouvrir le menu de boot du BIOS et lancé avec le périphérique
+ 3) Ouvrir le menu de BOOT du BIOS et lancé avec le périphérique
  4) Acceptez les conditions d'utilisation de Windows
  5) Choix du formatage avancé
  6) Supprimez toutes les anciennes partitions
- 7) Boot sur une partition libre
+ 7) BOOT sur une partition libre
  8) Attendre la fin de l'installation complète du PC
 
-## Les axe future
+## Les axes futurs
 
 Testé l'utilisation de ``imgmgr.exe``("Windows System Image Manager"), un outil du "Assessment and Deployment Kit" peut potentiellement permettre de faciliter 
 la création d'un XML et de testé la validité de celui-ci.
 
 [__Windows System Image Manager__](https://learn.microsoft.com/fr-fr/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference)
 
-Exploré les changements de Windows 10 à Windows 11, du unattend et des script PowerShell.
+Exploré les changements de Windows 10 à Windows 11, du unattend et des scripts PowerShell.
 
-*Attention fin en 2025 des mise a jour de sécurité pour Windows 10*
+*Attention, fin en 2025 des mises à jour de sécurité pour Windows 10*
 
 # Fin
