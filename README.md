@@ -121,6 +121,15 @@ Une fois tout préparé, l'on peut lancer le BOOT d'un PC presque sans intervent
 
 <i> *Combiné à l'utilisation de WAPT pour l'installation de la plupart de nos logiciels* </i>
 
+#### WAPT
+[![Licence](https://img.shields.io/badge/License-Licence%20propri%C3%A9taire-red?style=flat-square&label=License)](https://www.gnu.org/philosophy/categories.html#ProprietarySoftware)
+
+<img src=https://user-images.githubusercontent.com/120559974/220587385-b290301e-8da7-4616-bf8a-185ef3fe3dc7.png width="40%" height="40%">
+
+![fonctionnement_wapt](https://user-images.githubusercontent.com/120559974/220595018-62692b72-8433-4e61-b837-4a330638974e.png)
+
+
+
 ### 4) Générateur unattend.xml
 Pour simplifier les différentes manipulations de unattend.xml l'on peut créer sous différents formats un GUI, mon générateur de .xml est au format PowerShell.
 
