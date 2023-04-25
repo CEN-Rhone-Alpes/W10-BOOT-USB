@@ -116,6 +116,7 @@ Mais pour que cela fonctionne, il faut avoir préparé différents éléments qu
 - Les fichiers de paramétrage de GroupePolicy
 - Lien de la page pour définir le navigateur par défaut
 - Installateur QGIS 3.xx
+- Edité les fichier de gpedit.msc puis en faire une copie ([__Customize Windows 10 start screens__](https://learn.microsoft.com/en-us/windows/configuration/customize-windows-10-start-screens-by-using-group-policy)) 
 
 Une fois tout préparé, l'on peut lancer le BOOT d'un PC presque sans intervention.
 
